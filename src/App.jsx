@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ChatHeader from "./components/chatHeader";
+import ChatHeader from "./components/ChatHeader";
 import MessageList from "./components/MessageList";
 import MessageInput from "./components/MessageInput";
 import {io, Socket} from 'socket.io-client'
