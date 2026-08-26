@@ -115,7 +115,7 @@ const App = () => {
       }
     }
     fetchMessages()
-  },[username])
+  },[])
 
   useEffect(()=>{
     const fetchStats= async ()=>{
@@ -169,7 +169,7 @@ const App = () => {
       }
     }
     fetchCurrentUser()
-  },[username])
+  },[])
   const handleSend=(text)=>{
       socket.emit('message',{
         user:username,
