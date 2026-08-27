@@ -81,7 +81,7 @@ const App = () => {
       }
       
     
-  },[username])
+  },[])
 
   useEffect(()=>{
     if (!username) return;
