@@ -81,7 +81,7 @@ const App = () => {
       }
       
     
-  },[])
+  },[username])
 
   useEffect(()=>{
     if (!username) return;
@@ -115,7 +115,7 @@ const App = () => {
       }
     }
     fetchMessages()
-  },[])
+  },[username])
 
   useEffect(()=>{
     const fetchStats= async ()=>{
@@ -140,7 +140,7 @@ const App = () => {
       }
     }
     fetchStats()
-  },[])
+  },[username])
 
   useEffect(()=>{
     const fetchCurrentUser = async ()=>{
