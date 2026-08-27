@@ -169,7 +169,7 @@ const App = () => {
       }
     }
     fetchCurrentUser()
-  },[])
+  },[isLoggedIn])
   const handleSend=(text)=>{
       socket.emit('message',{
         user:username,
